@@ -1,0 +1,227 @@
+.dimension{
+	font-size: 50px;
+	color: rgb(0, 0, 210);
+	text-align: center;
+	text-shadow:	 
+     0 1px 0 rgb(0,0,180),
+     0 2px 0 rgb(0,0,150),
+     0 3px 0 rgb(0,0,120),
+     0 4px 0 rgb(0,0,90),
+     0 5px 0 rgb(0,0,50),
+     0 6px 0 rgb(0,0,30),
+
+     6px 7px  5px  rgba(0, 0, 0, .40),
+     6px 12px 10px rgba(0, 0, 0, .30), 
+     6px 17px 20px rgba(0, 0, 0, .20),
+     6px 22px 30px rgba(0, 0, 0, .10);
+}
+
+h2{
+	font-family: Apple Chancery, cursive;
+	font-size: 40px;
+	color: rgb(0, 0, 210);
+	border: 2px solid black;
+	margin: 15px;
+	padding: 20px;
+	text-align: center;
+
+}
+
+footer{
+	font-size: 40px;
+	color : white;
+	text-align: center;
+
+}
+
+html{
+	background: linear-gradient(white,blue,white)
+}
+
+a{
+	color: white;
+}
+
+
+
+.timeline {
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+
+.timeline ol {
+  font-size: 0;
+  width: 100vw;
+  padding: 250px 0;
+  transition: all 1s;
+}
+
+.timeline ol li {
+  position: relative;
+  display: inline-block;
+  list-style-type: none;
+  width: 160px;
+  height: 3px;
+  background: #fff;
+}
+
+.timeline ol li:last-child {
+  width: 280px;
+}
+
+.timeline ol li:not(:first-child) {
+  margin-left: 14px;
+}
+
+.timeline ol li:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 1px);
+  bottom: 0;
+  width: 12px;
+  height: 12px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: #F45B69;
+}
+
+.timeline ol li div {
+  position: absolute;
+  left: calc(100% + 7px);
+  width: 280px;
+  padding: 15px;
+  font-size: 1rem;
+  white-space: normal;
+  color: black;
+  background: white;
+}
+
+.timeline ol li div::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ol li:nth-child(odd) div {
+  top: -16px;
+  transform: translateY(-100%);
+}
+
+.timeline ol li:nth-child(odd) div::before {
+  top: 100%;
+  border-width: 8px 8px 0 0;
+  border-color: white transparent transparent transparent;
+}
+
+.timeline ol li:nth-child(even) div {
+  top: calc(100% + 16px);
+}
+
+.timeline ol li:nth-child(even) div::before {
+  top: -8px;
+  border-width: 8px 0 0 8px;
+  border-color: transparent transparent transparent white;
+}
+
+
+
+
+
+.coordonnées {
+	color: white;
+}
+
+.souligner{
+	text-decoration: underline;
+}
+
+
+.coord{
+	font-size: 19px;
+	color: white;
+	text-align: left;
+}
+
+
+.imgrond{
+	width: 200px;
+	margin-left: 0%;
+	margin-bottom: 2%;
+	border-radius: 100%;
+	box-shadow: 0px 20px 20px rgba(0,0,0,0.9);
+	border: 10px solid black;
+}
+
+.logo{
+			width: 200px;
+			margin-left: 0%;
+			margin-bottom: 0%;
+
+}
+
+.text{
+	font-family: arial;
+	text-align: justify;
+	font-size: 15px;
+	color: black;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+	padding: 20px;
+}
+.card img {
+  width: 150px;
+}
+.card h3{
+  flex-grow: 1;
+  padding-left: 20px;
+}
+
+.container{
+	
+	margin: 5px;
+	padding: 20px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.boite1{
+	border: solid black 3px;
+	margin: 10px;
+	padding: 30px;
+	border-radius: 40%;
+
+}
+
+
+.flexbox{
+	display: flex;
+}
+
+#centre{
+  display: block ;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 540px) {
+  
+  .container {
+    width: 300px;
+  }
+
+  .timeline ol li{
+    width: 50px;
+  }
+}
+
+
+
